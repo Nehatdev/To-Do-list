@@ -1,0 +1,113 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family:'poppins',sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    padding: 10px;
+    width: 100%;
+    min-height: 100vh;
+    background-color: hwb(50 37% 23%);
+}
+.List{
+    padding: 40px 30px 70px;
+    margin: 100px auto 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 540px;
+    background:#9b5199da;
+}
+.List h2{
+    color: black;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #edeef0;
+    padding-left: 20px;
+    border-radius: 30px;
+    margin-bottom: 25px;
+}
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 14px;
+    font-weight: 14px;
+}
+button{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background:rgb(112, 192, 102);
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+}
+/* tasklist li::before{
+    content: "o";
+    color: black;
+    font-size: 20px;
+    margin-right: 10px;
+} */
+#tasklist {
+    /* list-style-type: none; */
+    padding: 0;
+}
+#tasklist li {
+    margin: 5px;
+    padding: -1px;
+    border-radius: 5px;
+    cursor: pointer;
+    list-style-type: none;
+    position: relative;
+}
+#tasklist li::before {
+    content: '•';
+    color: black;
+    font-size: 20px;
+    margin-right:25px;
+}
+.remove-btn{
+    background-color: yellowgreen;
+    padding: 5px 10px;
+    position: absolute;
+    right: 26px;
+}
+
+  
+  
+ul li.checked {
+    background:lightblue;
+    color: #fff;
+    text-decoration: line-through;
+  }
+  
+  /* Add a "checked" mark when clicked on */
+  ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+  }
